@@ -14,7 +14,7 @@ const App = () => {
             <Route exact path="/">
               <Blogs />
             </Route>
-            <Route path="/showBlogDetails/:id">
+            <Route path="/show-blog-detail/:id">
               <BlogDetails />
             </Route>
           </Switch>
