@@ -7,8 +7,8 @@ const Blog = ({ blogs }) => {
           <div className="card mt-3 mb-3" key={blog.id} >
               <div className="card-body">
                 <h5 className="card-title">{ blog.blogHeading }</h5>
-                <p className="card-text">{ blog.blogBody }</p>
-                <p className="card-text">{ blog.tag }</p>
+                <p className="card-text badge bg-success">{ blog.tag }</p>
+                <br/>
                 <Link to={`/show-blog-detail/${blog.id}`} className="btn btn-dark">Read More</Link>
               </div>
           </div>

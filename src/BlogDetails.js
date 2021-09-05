@@ -13,7 +13,7 @@ const BlogDetails = () => {
                 <div className="card-body">
                     <h5 className="card-title">{blog.blogHeading}</h5>
                     <p className="card-text">{blog.blogBody}</p>
-                    <p className="card-text">{blog.tag}</p>
+                    <p className="card-text badge bg-success">{blog.tag}</p>
                 </div>
             </div>}
         </div>
