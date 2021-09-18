@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 
-const Blog = ({ blogs }) => {
+const Blog = ({ blogs, filterTag }) => {
     return (
       <div>
-        {blogs.map(blog => (
+        {blogs.filter(blog => {
+          if(filterTag ===  'All') {
+            return true;
+          } else {
+            return blog.tag === filterTag;
+          }
+        }).map(blog => (
           <div className="card mt-3 mb-3" key={blog.id} >
               <div className="card-body">
                 <h5 className="card-title">{ blog.blogHeading }</h5>
