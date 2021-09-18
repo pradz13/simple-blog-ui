@@ -9,7 +9,7 @@ const AddBlog = () => {
         e.preventDefault();
         const blog = { blogHeading, blogBody, tag };
 
-        fetch('http://localhost:8080/add-blog/', {
+        fetch('http://simpleblogbackend-env.eba-ri77phsa.ap-south-1.elasticbeanstalk.com/add-blog/', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog)

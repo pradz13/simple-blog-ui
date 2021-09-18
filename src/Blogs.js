@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 import { useState } from "react";
 
 const Blogs = () => {
-    const { error, isPending, data: blogs } = useFetch('http://localhost:8080/get-blogs');
+    const { error, isPending, data: blogs } = useFetch('http://simpleblogbackend-env.eba-ri77phsa.ap-south-1.elasticbeanstalk.com/get-blogs');
     const [filterTag, setFilterTagData] = useState('All');
 
     const filterTagSelection = (data) => {
