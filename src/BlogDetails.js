@@ -4,7 +4,7 @@ import renderHTML from 'react-render-html';
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('http://simpleblogbackend-env.eba-ri77phsa.ap-south-1.elasticbeanstalk.com/get-blog/' + id);
+    const { data: blog, error, isPending } = useFetch('http://3.109.165.82:8080/get-blog/' + id);
 
     return (
         <div>
