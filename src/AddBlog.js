@@ -3,7 +3,7 @@ import { useState } from "react";
 const AddBlog = () => {
     const [blogHeading, setBlogHeading] = useState('');
     const [blogBody, setBlogBody] = useState('');
-    const [tag, setTag] = useState('');
+    const [tag, setTag] = useState('Films');
 
     const handleSubmit = (e) => {
         e.preventDefault();
