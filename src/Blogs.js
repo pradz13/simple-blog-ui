@@ -15,14 +15,8 @@ const Blogs = () => {
         <div>
             {error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}
-            <div className="row">
-                <div className="col-8">
-                    {blogs && <Blog blogs={blogs} filterTag={filterTag}/>}
-                </div>
-                <div className="col-4">
-                    <AboutUs filterTagSelection = {filterTagSelection}/>
-                </div>
-            </div>
+            <AboutUs filterTagSelection={filterTagSelection} />
+            {blogs && <Blog blogs={blogs} filterTag={filterTag} />}
         </div>
     );
 }
