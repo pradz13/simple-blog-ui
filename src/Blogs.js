@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 import { useState } from "react";
 
 const Blogs = () => {
-    const { error, isPending, data: blogs } = useFetch('http://3.109.165.82:8080/get-blogs');
+    const { error, isPending, data: blogs } = useFetch('http://3.6.203.175:8080/get-blogs');
     const [filterTag, setFilterTagData] = useState('All');
 
     const filterTagSelection = (data) => {

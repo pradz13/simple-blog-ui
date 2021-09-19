@@ -4,7 +4,7 @@ import renderHTML from 'react-render-html';
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('http://3.109.165.82:8080/get-blog/' + id);
+    const { data: blog, error, isPending } = useFetch('http://3.6.203.175:8080/get-blog/' + id);
 
     return (
         <div>

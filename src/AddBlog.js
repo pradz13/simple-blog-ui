@@ -9,7 +9,7 @@ const AddBlog = () => {
         e.preventDefault();
         const blog = { blogHeading, blogBody, tag };
 
-        fetch('http://3.109.165.82:8080/add-blog/', {
+        fetch('http://3.6.203.175:8080/add-blog/', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog)
